@@ -7,3 +7,7 @@ jobs:
     steps:
       - name: my-step
         run: echo "Hello World!"
+      - name: List files in the repository
+        run: |
+          ls ${{ github.workspace }}
+      - run: echo "🍏 This job's status is ${{ job.status }}."
